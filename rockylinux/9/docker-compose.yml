@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  rockylinux:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: qjoly/molecule-os:rockylinux-9
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    container_name: rockylinux
+
