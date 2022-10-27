@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 LABEL maintainer="Robert de Bock <robert@meinit.nl>"
 LABEL build_date="2022-01-14"
