@@ -1,4 +1,4 @@
-name: debian-bullseye
+name: debian-buster
 
 on:
   push:
