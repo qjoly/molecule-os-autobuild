@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  openrc:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: qjoly/molecule-os:alpine
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    container_name: openrc
+
