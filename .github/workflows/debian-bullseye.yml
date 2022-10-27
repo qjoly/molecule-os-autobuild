@@ -29,5 +29,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: qjoly/molecule-os:$tag
-          file: $file
+          tags: "qjoly/molecule-os:$tag"
+          file: "$file"
