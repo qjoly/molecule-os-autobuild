@@ -1,4 +1,4 @@
-name: debian-bullseye
+name: rockylinux-9
 
 on:
   push:
