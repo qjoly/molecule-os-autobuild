@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  bullseye:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: qjoly/molecule-os:debian-bullseye
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    container_name: bullseye
+
