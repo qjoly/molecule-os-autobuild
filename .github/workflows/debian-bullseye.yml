@@ -2,6 +2,8 @@ name: debian-bullseye
 
 on:
   push:
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
   
 env:

@@ -3,6 +3,11 @@ name: alpine3
 on:
   push:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+env:
+  tag: alpine3
+  file: ./alpine/Dockerfile
   
 jobs:
   docker:
@@ -25,5 +30,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: qjoly/molecule-os:alpine
-          file: ./alpine/Dockerfile
+          tags: "qjoly/molecule-os:${{ env.tag }}"
+          file: ${{ env.file }}
+
