@@ -1,0 +1,16 @@
+
+name: Dockerhub README
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:    
+    - name: Dockerhub Readme
+      uses: ms-jpq/sync-dockerhub-readme@v1
+      with:
+        username: qjoly
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        readme: ./README.md
+        repository: "qjoly/molecule-os"
