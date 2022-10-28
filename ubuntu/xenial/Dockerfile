@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:jammy
 
 LABEL maintainer="Robert de Bock <robert@meinit.nl>"
 
