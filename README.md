@@ -1,4 +1,7 @@
-# molecule-os-autobuild
+# Molecule OS AutoBuild 
+:point_right: Images are updated daily :point_left:
+
+![](https://img.shields.io/docker/pulls/qjoly/molecule-os?style=flat-square)
 
 | Name            | Image                             | Base image      | Systemd      |
 |-----------------|-----------------------------------|-----------------|--------------|
