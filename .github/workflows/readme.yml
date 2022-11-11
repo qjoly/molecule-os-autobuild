@@ -15,6 +15,6 @@ jobs:
       uses: ms-jpq/sync-dockerhub-readme@v1
       with:
         username: qjoly
-        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
         readme: ./README.md
         repository: "qjoly/molecule-os"
