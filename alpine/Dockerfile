@@ -1,4 +1,4 @@
-FROM alpine:20221110
+FROM alpine:20230208
 
 LABEL maintainer="Robert de Bock <robert@meinit.nl>" 
 LABEL build_date="2022-05-18"
